@@ -49,6 +49,7 @@ nav {
 .menu ul {
 	display: flex;
 	list-style: none;
+	z-index: 900;
 }
 
 .menu li {
