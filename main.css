@@ -1,0 +1,320 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 24px;
+	font-family: sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.main-grid {
+	display: grid;
+	grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+}
+
+
+header {
+	background-image: url("images/shop_header_back.jpg");
+	background-size: cover;
+	box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+	height: 70vh;
+	grid-column: 1 / -1;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+}
+
+.aboutHeader {
+	background-image: url("images/about_header_back.jpg");
+}
+
+nav {
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 50px;
+}
+
+.logo {
+	height: 100%;
+}
+
+.menu ul {
+	display: flex;
+	list-style: none;
+}
+
+.menu li {
+	padding: 1em 2em;
+}
+
+.menu ul li a {
+	color: #fff;
+	text-decoration: none;
+	transition: 0.9s;
+}
+
+.menu ul li a:hover {
+	color: orange;
+	transition: 0.9s;
+}
+
+.tiles {
+	grid-column: 2 / -2;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 40px;
+	margin-bottom: 100px;
+}
+
+.item {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	overflow: hidden;
+}
+
+.item img {
+	grid-column: 1 / -1;
+	grid-row: 1 / -1;
+	width: 100%;
+	height: 100%;
+	transition: 0.5s;
+}
+
+.banner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-grow: 1;
+}
+
+
+.banner h1 {
+	font-size: 72px;
+}
+
+
+footer {
+	grid-column: 1 / -1;
+	height: 30vh;
+	background: #000;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+footer p {
+	padding: 30px 0;
+}
+
+.soc_contacts {
+	display: flex;
+	width: 10vw;
+	justify-content: space-around;
+	
+}
+
+.contentInfo {
+	grid-column: 2 / -2;
+	height: 15vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	padding-top: 75px;
+	padding-bottom: 100px;
+}
+
+.contentInfo p {
+	padding: 20px;
+	text-align: center;
+}
+
+.button {
+	background: #000;
+	border-radius: 7px;
+	color: #fff;
+	padding: 15px 50px;
+	transition: 0.9s;
+	text-align: center;
+}
+
+.button:hover {
+	background: darkorange;
+	transition: 0.9s;
+}
+
+.tiles .item p {
+	margin: 20px;
+	text-align: center;
+}
+
+.desc {
+	grid-column: 2 / -2;
+	height: 30vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding: 70px 0;
+	padding-right: 15vw;
+}
+
+.desc h2 {
+	text-align: justify;
+}
+
+.tilesTeam {
+	grid-column: 2 / -2;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-column-gap: 100px;
+	grid-row-gap: 100px;
+	margin-bottom: 100px;
+}
+
+.tilesTeam .item {
+	display: flex;
+	height: 40vh;
+	justify-content: center;
+	flex-direction: column;
+	font-size: 18px;
+	align-items: center;
+}
+
+.itemImg {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.teamName {
+	margin: 20px 0;
+}
+
+.tilesTeam .item p {
+	text-align: center;
+}
+
+.contHeader {
+	height: 70vh;
+	background-image: url(images/contact.jpg);
+}
+
+.ContactInfo {
+	grid-column: 2 / -2;
+	display: grid;
+	padding: 80px 0;
+}
+
+.ContactInfo a {
+	color: black;
+	text-decoration: underline
+}
+
+.ContactInfo p {
+	padding: 5px 0;
+}
+
+
+/*.inputs {
+	grid-column: 2 / -2;
+	display: grid;
+	padding: 75px 0;
+}*/
+
+/*.inputs p {
+	padding: 18px 0;
+}
+
+input {
+	border: none;
+	outline: none;
+	border-bottom: 2px solid black;
+	font-size: 21px;
+	padding: 18px 0;
+}
+
+.mail, .name {
+	padding-bottom: 65px;
+}
+
+.button2 {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 25px;
+    font-size: 16px;
+    text-align: center;
+    width: 175px;
+    font-size: 18px;
+}*/
+
+.formData {
+	grid-column: 2 / -2;
+	display: flex;
+	flex-direction: column;
+	/*justify-content: center;
+	align-items: center;*/
+}
+
+input {
+	width: 100%;
+	font-size: 18px;
+	padding: 20px 5px;
+	margin: 30px 0;
+	box-sizing: border-box;
+	border: none;
+	border-bottom: 1px solid black;
+}
+
+input:focus {
+	outline: none;
+}
+
+.submit {
+	width: 300px;
+	background: black;
+	border-radius: 40px;
+	color: #fff;
+	transition: 0.6s;
+	align-self: center;
+}
+
+.submit:hover {
+	color: orange;
+	transition: 0.6s;
+	cursor: pointer;
+}
+
+.mapDesc {
+	grid-column: 2 / -2;
+}
+
+iframe {
+	grid-column: 1 / -1;
+	width: 100%;
+	height: 50vh;
+	margin-top: 30px;
+}
+
+@media all and (max-width: 900px) {
+	.tilesTeam {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	nav {
+		flex-direction: column;
+	}
+}
