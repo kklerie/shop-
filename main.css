@@ -317,4 +317,27 @@ iframe {
 	nav {
 		flex-direction: column;
 	}
+
+	.menu ul {
+	flex-direction: column;
+	}
+
+	.aboutHeader {
+	background-image: url("images/about_header_back.jpg");
+	height: 120vh;
+	}
+
+	.desc {
+	height: 60vh;
+	}
+
+	.menu li {
+    	padding: 1em 2em;
+    	text-align: center;
+	}
+
+	.banner h1 {
+    	font-size: 72px;
+    	text-align: center;
+	}
 }
